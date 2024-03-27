@@ -1,17 +1,18 @@
 import Image from 'next/image'
+import ProductMenu from '@/components/layout/ProductMenu'
 export default function Product() {
     return (
         <>
-            <section className=''>
-                <div className="absolute left-0 right-0">
-                    <div className="h-48 w-48 absolute left-0 top-0">
+            <section className="">
+                <div className="absolute -left-12 -right-12 w-full">
+                    <div className="h-48 w-48 absolute left-0 -top-[70px] -z-10">
                         <Image
                             src={'/images/sallad1.png'}
                             layout={'fill'}
                             objectFit={'contain'}
                         ></Image>
                     </div>
-                    <div className="h-48 w-48 absolute right-0">
+                    <div className="h-48 w-48 absolute -right-24 -top-[70px] -z-10">
                         <Image
                             src={'/images/sallad2.png'}
                             layout={'fill'}
@@ -28,6 +29,17 @@ export default function Product() {
                             Products
                         </h2>
                     </div>
+                </div>
+                <div className="pt-6 grid grid-cols-3 gap-4">
+                    <ProductMenu />
+                    <ProductMenu />
+                    <ProductMenu />
+                    <ProductMenu />
+                    <ProductMenu />
+                    <ProductMenu />
+                    <ProductMenu />
+                    <ProductMenu />
+                    <ProductMenu />
                 </div>
             </section>
         </>
