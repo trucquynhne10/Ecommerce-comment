@@ -5,7 +5,7 @@ export default function Hero() {
         <>
             <div className="py-2"></div>
 
-            <section className="hero">
+            <section className="hero mt-4">
                 <div className="py-12">
                     <h1 className="text-4xl font-semibold">
                         Everything is better with me
@@ -26,7 +26,7 @@ export default function Hero() {
                         </button>
                     </div>
                 </div>
-                <div className="h-15 w-15 relative ">
+                <div className="h-15 w-15 max-h-344 relative ">
                     <Image
                         src={'/images/pizza.png'}
                         layout={'fill'}

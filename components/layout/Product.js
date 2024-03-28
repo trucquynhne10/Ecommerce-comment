@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import ProductMenu from '@/components/layout/ProductMenu'
+import SectionHeader from './SectionHeader'
 export default function Product() {
     return (
         <>
@@ -20,16 +21,11 @@ export default function Product() {
                         ></Image>
                     </div>
                 </div>
+
                 <div className="text-center">
-                    <div className="text-center">
-                        <h3 className="uppercase text-gray-600 font-semibold leading-4">
-                            Check out
-                        </h3>
-                        <h2 className="text-primary font-bold text-4xl italic">
-                            Products
-                        </h2>
-                    </div>
+                    <SectionHeader subHeader={'check out'} mainHeader={'Product'}/>
                 </div>
+
                 <div className="pt-6 grid grid-cols-3 gap-4">
                     <ProductMenu />
                     <ProductMenu />
